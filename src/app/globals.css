@@ -52,9 +52,10 @@
   --radius-lg: var(--radius);
   --radius-xl: calc(var(--radius) + 4px);
 
-  --color-forest: var(--color-forest);
-  --color-cream: var(--color-cream);
-  --color-gold: var(--color-gold);
+  --color-forest: #122c22;
+  --color-cream: #FBF6EB;
+  --color-gold: #EED89E;
+  --color-dark-gold: #ba963b;
 }
 
 :root {
@@ -62,13 +63,14 @@
   --font-serif: 'Playfair Display', serif;
   --font-display: 'Cinzel', serif;
 
-  --color-forest: #032415;
-  --color-cream: #FBF6EB;
-  --color-gold: #ffd773;
-
   /* --color-forest: #122C18;
   --color-cream: #FBF6EB;
-  --color-gold: #EED89E; */
+  --color-gold: #ffe39e; */
+
+  --color-forest: #122c22;
+  --color-cream: #FBF6EB;
+  --color-gold: #EED89E;
+  --color-dark-gold: #ba963b;
 
 
   --radius: 0.625rem;
