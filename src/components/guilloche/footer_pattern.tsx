@@ -1,4 +1,6 @@
-import React from 'react';
+'use client';
+
+import React, { useState, useEffect } from 'react';
 
 interface GuillocheProps {
   className?: string;
@@ -7,12 +9,21 @@ interface GuillocheProps {
   type?: 'wave' | 'security-strip' | 'rosette';
 }
 
-export const Guilloche: React.FC<GuillocheProps> = ({ 
-  className = "", 
+export const Guilloche: React.FC<GuillocheProps> = ({
+  className = "",
   opacity = 0.2,
   color = "#EED89E",
   type = 'wave'
 }) => {
+  const [mounted, setMounted] = useState(false);
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
+
+  if (!mounted) {
+    return <div className={`absolute inset-0 overflow-hidden pointer-events-none ${className}`} style={{ opacity }} />;
+  }
   const width = 1200;
   // Increase height for rosette to ensure circular patterns fit
   const height = type === 'security-strip' ? 60 : (type === 'rosette' ? 800 : 600);
