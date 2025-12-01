@@ -1,9 +1,10 @@
 "use client";
 
-import { Terminal, Globe, Coffee, Briefcase, Code, Users } from "lucide-react";
+import { Briefcase, Code, Users } from "lucide-react";
 import { Guilloche } from "@/components/guilloche/Guilloche";
 import FadeIn from "@/components/animations/FadeIn";
 import { Button } from "@/components/ui/button";
+import Hero from "@/app/components/homepage/Hero";
 
 // Section wrapper component
 function Section({
@@ -63,36 +64,7 @@ export default function Careers() {
   return (
     <div className="">
       {/* Manifesto / Hero */}
-      <Section className="bg-forest text-cream min-h-[60vh] relative overflow-hidden">
-        <div className="absolute inset-0 opacity-20 pointer-events-none">
-          <Guilloche type="wave" color="#EED89E" />
-        </div>
-        <FadeIn>
-          <div className="container mx-auto">
-            <div className="w-full flex flex-col items-start justify-start">
-              <h1 className="font-serif text-5xl md:text-7xl mb-8 leading-tighter tracking-tighter">
-                The Operating System for <br />
-                <span className="text-gold italic">High-Stakes Service.</span>
-              </h1>
-              <p className=" md:text-lg text-cream/70 leading-relaxed mb-12 max-w-2xl">
-                In the future, all successful professional services firms will
-                be technology companies. We are building that future today.
-              </p>
-              <div className="w-full flex flex-col md:flex-row gap-8 text-sm font-mono text-gold/80 border-t border-gold/20 pt-8">
-                <div className="flex items-center gap-3">
-                  <Terminal size={18} /> AI Native Workflows
-                </div>
-                <div className="flex items-center gap-3">
-                  <Globe size={18} /> Globally Distributed
-                </div>
-                <div className="flex items-center gap-3">
-                  <Coffee size={18} /> High Autonomy
-                </div>
-              </div>
-            </div>
-          </div>
-        </FadeIn>
-      </Section>
+      <Hero />
 
       {/* Work Style */}
       <Section className="bg-white text-forest">
