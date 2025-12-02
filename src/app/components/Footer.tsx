@@ -4,6 +4,7 @@ import Link from "next/link";
 import { ChevronRight, MapPin } from "lucide-react";
 import { Guilloche } from "../../components/guilloche/footer_pattern";
 import { useEffect, useRef, useState } from "react";
+import { MultiplierLogo } from "./MultiplierLogo";
 
 export default function Footer() {
   const [isVisible, setIsVisible] = useState(false);
@@ -149,6 +150,24 @@ export default function Footer() {
               </ul>
             </div>
           </div>
+        </div>
+
+        {/* Copyright */}
+        <div
+          className="border-t border-cream/10 pt-8 flex items-center justify-between transition-all duration-1000 ease-out"
+          style={{
+            opacity: isVisible ? 1 : 0,
+            transform: isVisible ? "translateY(0)" : "translateY(30px)",
+            transitionDelay: "500ms",
+          }}
+        >
+          <MultiplierLogo
+            variant="icon"
+            className="text-gold h-4 -ml-10"
+          />
+          <p className="text-gold/70 text-sm">
+            © Multiplier Holdings. All rights reserved.
+          </p>
         </div>
       </div>
     </footer>

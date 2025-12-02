@@ -27,8 +27,11 @@ export default function Header() {
           <Link href="/" className="group flex items-center gap-0">
             <MultiplierLogo
               variant="icon"
-              className="text-cream group-hover:text-white transition-colors h-5 -ml-10"
-            />
+              className="text-gold group-hover:text-cream transition-colors h-5 -ml-10"
+            /><MultiplierLogo
+            variant="text"
+            className="text-gold group-hover:text-cream transition-colors h-3.5 -ml-8"
+          />
           </Link>
 
           {/* Desktop Navigation */}
