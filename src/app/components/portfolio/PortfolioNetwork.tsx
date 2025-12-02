@@ -34,7 +34,7 @@ export default function PortfolioNetwork() {
   return (
     <Section id="network" className="bg-cream">
       <div className="text-center mb-20">
-        <span className="text-forest/50 text-[10px] font-bold uppercase tracking-[0.3em] mb-6 block">
+        <span className="text-forest/50 text-xs font-bold uppercase tracking-[0.2em] mb-4 block">
           Global Reach
         </span>
         <h2 className="font-serif text-5xl md:text-6xl tracking-tight text-forest leading-[1.1]">
@@ -68,7 +68,7 @@ export default function PortfolioNetwork() {
           const isIncluded = selectedRegion ? firm.coverage.includes(selectedRegion) : true;
 
           return (
-            <FadeIn key={idx} delay={200 + (idx * 150)}>
+            <FadeIn key={idx} delay={200 + (idx * 150)} className="h-full">
               <FirmCard firm={firm} dimmed={!isIncluded} />
             </FadeIn>
           );
