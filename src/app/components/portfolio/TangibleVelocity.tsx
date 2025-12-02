@@ -22,7 +22,11 @@ export default function TangibleVelocity() {
   return (
     <Section className="bg-forest border-y border-gold/20">
       <FadeIn>
-        <h2 className="text-center font-serif text-4xl text-cream mb-16">Tangible Velocity</h2>
+        <span className="text-cream/60 text-xs font-bold uppercase tracking-[0.2em] mb-4 block text-center">
+          Velocity
+        </span>
+        <h2 className="text-center font-serif text-5xl md:text-6xl tracking-tight text-cream mb-16">Tangible Results</h2>
+        
         <div className="grid md:grid-cols-2 gap-12">
           {testimonials.map((testimonial, idx) => (
             <div
@@ -30,7 +34,7 @@ export default function TangibleVelocity() {
               className="relative bg-white/5 border border-gold/30 p-10 rounded-sm"
             >
               <div className="absolute top-0 left-0 w-12 h-12 border-t-2 border-l-2 border-gold"></div>
-              <p className="font-serif text-xl md:text-2xl text-cream italic mb-8 leading-relaxed">
+              <p className="font-serif text-xl md:text-2xl text-cream italic mb-8 leading-[1.45em]">
                 {testimonial.quote}
                 {testimonial.highlightedText && (
                   <>
