@@ -87,7 +87,7 @@ export default function Platform() {
           <FadeIn delay={200}>
             <div className="relative">
               {/* AI Extraction Popout Card */}
-              <div className="absolute bottom-28 w-108  bg-white border-2 border-dark-gold shadow-2xl z-20 transform  hover:rotate-0 transition-transform duration-300">
+              <div className="absolute bottom-28 w-108  bg-white border border-dark-gold shadow-2xl z-20 transform  hover:rotate-0 transition-transform duration-300">
                 <div className="p-5 relative overflow-hidden">
                   <div className="absolute top-0 right-0 w-32 h-32 opacity-5">
                     <Guilloche color="#122C18" type="rosette" />
@@ -115,7 +115,7 @@ export default function Platform() {
               </div>
 
               {/* Tax Form UI Card */}
-              <div className="relative bg-white border-2 border-forest/20 shadow-xl overflow-hidden ml-24">
+              <div className="relative bg-white border border-forest/10 shadow-xl overflow-hidden ml-24">
               {/* Header */}
               <div className="bg-cream border-b border-forest/10 px-6 py-4 flex items-center justify-between">
                 <div>
@@ -195,7 +195,7 @@ export default function Platform() {
                     type="text"
                     value="456 Oak St, San Francisco, CA 12345"
                     readOnly
-                    className="w-full px-3 py-2 bg-cream/50 border border-forest/10 text-sm text-forest rounded-sm"
+                    className="w-full px-3 py-2 bg-cream/50 border border-forest/10 text-sm text-forest "
                   />
                 </div>
 
@@ -212,7 +212,7 @@ export default function Platform() {
                         AI Scanning
                       </span>
                     </div>
-                    <div className="w-full h-16 bg-gold/20 my-2 rounded-lg"></div>
+                    <div className="w-full h-16 bg-dark-gold/8 my-2 "></div>
                     <div className="space-y-2">
                       <div className="flex items-center gap-3 p-2.5 bg-white border-2 border-dark-gold/30 shadow-sm">
                         <div className="w-8 h-8 bg-dark-gold/10 flex items-center justify-center">
