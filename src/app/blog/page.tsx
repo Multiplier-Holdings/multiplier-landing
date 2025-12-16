@@ -115,7 +115,7 @@ export default function Blog() {
     <div className="min-h-screen bg-cream selection:bg-gold/30">
       
       {/* Featured Section */}
-      <section className="relative pt-32 pb-20 px-4 overflow-hidden">
+      <section className="relative pt-16 pb-20 px-4 overflow-hidden">
         {/* Background Guilloche Accent */}
          <div className="absolute top-0 right-0 w-[800px] h-[800px] opacity-30 pointer-events-none translate-x-1/3 -translate-y-1/4">
             <Guilloche type="wave" opacity={0.3} className="text-gold" />
