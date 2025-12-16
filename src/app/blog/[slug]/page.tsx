@@ -20,7 +20,7 @@ export default function BlogPost() {
   return (
     <article className="min-h-screen bg-cream">
       {/* Back Navigation */}
-      <div className="max-w-2xl mx-auto px-6 pt-20 pb-8">
+      <div className="max-w-2xl mx-auto px-6 pt-8 pb-8">
         <Link
           href="/blog"
           className="inline-flex items-center gap-2 text-sm text-forest/60 hover:text-forest transition-colors"
