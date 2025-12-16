@@ -115,17 +115,17 @@ export default function Blog() {
          </div>
 
         <div className="max-w-7xl mx-auto">
-            <div className="flex flex-col lg:flex-row gap-8 lg:gap-16 items-start">
+            <div className="flex flex-col lg:flex-row gap-8 lg:gap-16 items-center">
                  {/* Featured Content */}
                 <div className="flex-1 space-y-8 relative z-10 pt-4">
                      <div className="flex items-center gap-3 text-forest/60 font-sans tracking-wider text-xs uppercase font-medium">
-                        <span className="bg-gold/20 text-dark-gold px-3 py-1 rounded-sm">Spotlight</span>
+                        <span className="bg-gold/20 text-dark-gold px-3 py-1 rounded-sm">Latest</span>
                         <span>{featuredPost.date}</span>
                         <span>•</span>
                         <span>{featuredPost.readTime}</span>
                     </div>
                     
-                    <h1 className="text-5xl md:text-6xl lg:text-7xl font-serif font-bold text-forest leading-[1.1]">
+                    <h1 className="text-4xl md:text-5xl lg:text-6xl font-serif font-medium text-forest leading-[1] tracking-tight text-balance">
                         <Link href="#" className="hover:text-dark-gold transition-colors duration-300">
                             {featuredPost.title}
                         </Link>
@@ -142,7 +142,7 @@ export default function Blog() {
                             className="w-12 h-12 rounded-full object-cover border-2 border-cream shadow-md"
                         />
                         <div>
-                            <p className="text-forest font-serif font-bold text-lg">{featuredPost.author.name}</p>
+                            <p className="text-forest font-serif font-semibold text-lg">{featuredPost.author.name}</p>
                             <div className="flex gap-2 text-xs text-forest/60 uppercase tracking-wide">
                                 {featuredPost.tags.map(tag => <span key={tag}>{tag}</span>)}
                             </div>
@@ -179,10 +179,6 @@ export default function Blog() {
       {/* Regular Feed */}
       <section className="pt-20 pb-32 px-4">
         <div className="max-w-7xl mx-auto">
-            <div className="flex justify-between items-end mb-12">
-                 <h2 className="text-3xl font-serif font-bold text-forest">Latest Thinking</h2>
-                 <span className="text-forest/50 font-sans text-sm hidden md:inline-block">Archive 2025</span>
-            </div>
            
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-16">
                 {regularPosts.map((post) => (
@@ -209,7 +205,7 @@ export default function Blog() {
                             <span>{post.readTime}</span>
                         </div>
                         
-                        <h3 className="text-2xl font-serif font-bold text-forest mb-3 leading-tight group-hover:text-dark-gold transition-colors">
+                        <h3 className="text-2xl font-serif font-semibold text-forest mb-3 leading-tight tracking-tight group-hover:text-dark-gold transition-colors">
                             {post.title}
                         </h3>
                         
