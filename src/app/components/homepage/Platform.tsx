@@ -85,158 +85,163 @@ export default function Platform() {
           </FadeIn>
 
           <FadeIn delay={200}>
-            <div className="relative">
-              {/* AI Extraction Popout Card */}
-              <div className="absolute bottom-28 w-108  bg-white border border-dark-gold shadow-2xl z-20 transform  hover:rotate-0 transition-transform duration-300">
-                <div className="p-5 relative overflow-hidden">
-                  <div className="absolute top-0 right-0 w-32 h-32 opacity-5">
+            <div className="relative min-w-0">
+              {/* AI Extraction Popout Card - Modern floating card */}
+              <div className="absolute -left-4 lg:left-0 bottom-24 lg:bottom-32 w-[calc(100%-1rem)] sm:w-80 lg:w-96 bg-gradient-to-br from-white to-cream/80 backdrop-blur-sm rounded-lg shadow-[0_20px_60px_-15px_rgba(0,0,0,0.2)] z-20 border border-forest/5 overflow-hidden">
+                <div className="absolute inset-0 bg-gradient-to-br from-dark-gold/[0.02] to-transparent pointer-events-none"></div>
+                <div className="p-5 relative">
+                  <div className="absolute top-0 right-0 w-32 h-32 opacity-[0.03]">
                     <Guilloche color="#122C18" type="rosette" />
                   </div>
-                  <div className="flex items-start gap-3 relative z-10">
-                    <div className="w-10 h-10 bg-dark-gold flex items-center justify-center shrink-0">
+                  <div className="flex items-start gap-4 relative z-10">
+                    <div className="w-11 h-11 bg-gradient-to-br from-dark-gold to-dark-gold/80 rounded-md flex items-center justify-center shrink-0 shadow-lg shadow-dark-gold/20">
                       <Network className="w-5 h-5 text-white" />
                     </div>
-                    <div>
-                      <p className="text-sm font-bold text-forest mb-2 uppercase tracking-wide">AI Extraction Complete</p>
-                      <p className="text-xs text-forest/70 leading-relaxed mb-3">
+                    <div className="flex-1 min-w-0">
+                      <p className="text-sm font-semibold text-forest mb-1.5">AI Extraction Complete</p>
+                      <p className="text-xs text-forest/60 leading-relaxed mb-3">
                         Personal details, SSN, and address automatically extracted from W-2 attachment and filled into the tax form.
                       </p>
-                      <div className="flex items-center gap-2">
-                        <div className="h-1.5 bg-forest/10 flex-1">
-                          <div className="h-full bg-dark-gold w-[99%]"></div>
+                      <div className="flex items-center gap-3">
+                        <div className="h-2 bg-forest/5 flex-1 rounded overflow-hidden">
+                          <div className="h-full bg-gradient-to-r from-dark-gold to-dark-gold/80 w-[99%] rounded"></div>
                         </div>
-                        <span className="text-[10px] font-bold text-dark-gold">99.8%</span>
+                        <span className="text-xs font-semibold text-dark-gold">99.8%</span>
                       </div>
                     </div>
                   </div>
-                </div>
-                <div className="absolute -top-1 -right-1 w-3 h-3 border-t-2 border-r-2 border-dark-gold"></div>
-                <div className="absolute -bottom-1 -left-1 w-3 h-3 border-b-2 border-l-2 border-dark-gold"></div>
-              </div>
-
-              {/* Tax Form UI Card */}
-              <div className="relative bg-white border border-forest/10 shadow-xl overflow-hidden ml-24">
-              {/* Header */}
-              <div className="bg-cream border-b border-forest/10 px-6 py-4 flex items-center justify-between">
-                <div>
-                  <h3 className="font-serif text-lg text-forest">Form 1040 - 2024</h3>
-                  <p className="text-xs text-forest/50 font-mono">US Individual Income Tax Return</p>
-                </div>
-                <div className="flex items-center gap-2">
-                  <span className="text-[9px] font-bold uppercase tracking-widest text-dark-gold bg-gold/10 px-2 py-1 flex items-center gap-1.5">
-                    <div className="w-1 h-1 bg-dark-gold rounded-full animate-pulse"></div>
-                    AI Processing
-                  </span>
                 </div>
               </div>
 
-              {/* Form Content */}
-              <div className="p-6 space-y-4">
-                {/* Primary Taxpayer */}
-                <div>
-                  <label className="text-[10px] font-bold uppercase tracking-wider text-forest/60 mb-2 block">
-                    Primary Taxpayer
-                  </label>
-                  <div className="grid grid-cols-2 gap-3">
-                    <div className="relative">
-                      <input
-                        type="text"
-                        value="Young"
-                        readOnly
-                        className="w-full px-3 py-2 bg-cream/50 border border-forest/10 text-sm text-forest rounded-sm"
-                      />
-                      {/* AI Extraction Indicator */}
-                      <div className="absolute -right-2 -top-2 w-5 h-5 bg-dark-gold rounded-full flex items-center justify-center shadow-md">
-                        <svg className="w-3 h-3 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M5 13l4 4L19 7" />
-                        </svg>
-                      </div>
+              {/* Tax Form UI Card - Modern design */}
+              <div className="relative bg-white rounded-lg shadow-[0_25px_80px_-20px_rgba(0,0,0,0.15)] overflow-hidden ml-0 lg:ml-16 border border-forest/5">
+                {/* Subtle gradient overlay */}
+                <div className="absolute inset-0 bg-gradient-to-br from-cream/30 via-transparent to-dark-gold/[0.02] pointer-events-none"></div>
+
+                {/* Header */}
+                <div className="relative bg-gradient-to-r from-forest to-forest/95 px-5 sm:px-6 py-4 sm:py-5">
+                  <div className="absolute inset-0 opacity-10">
+                    <Guilloche color="#ffffff" type="wave" />
+                  </div>
+                  <div className="flex items-center justify-between gap-4 relative z-10">
+                    <div className="min-w-0">
+                      <h3 className="font-serif text-base sm:text-lg text-white truncate">Form 1040 - 2024</h3>
+                      <p className="text-[10px] sm:text-xs text-white/50 font-mono">US Individual Income Tax Return</p>
                     </div>
-                    <div className="relative">
-                      <input
-                        type="text"
-                        value="Nicholas"
-                        readOnly
-                        className="w-full px-3 py-2 bg-cream/50 border border-forest/10 text-sm text-forest rounded-sm"
-                      />
-                      <div className="absolute -right-2 -top-2 w-5 h-5 bg-dark-gold rounded-full flex items-center justify-center shadow-md">
-                        <svg className="w-3 h-3 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M5 13l4 4L19 7" />
-                        </svg>
-                      </div>
+                    <div className="shrink-0">
+                      <span className="text-[9px] sm:text-[10px] font-semibold uppercase tracking-wider text-dark-gold bg-white/10 backdrop-blur-sm px-2.5 py-1.5 rounded flex items-center gap-2 border border-white/10">
+                        <div className="w-1.5 h-1.5 bg-dark-gold rounded-full animate-pulse"></div>
+                        <span className="hidden sm:inline">AI Processing</span>
+                        <span className="sm:hidden">AI</span>
+                      </span>
                     </div>
                   </div>
                 </div>
 
-                {/* SSN */}
-                <div className="relative">
-                  <label className="text-[10px] font-bold uppercase tracking-wider text-forest/60 mb-2 block">
-                    Social Security Number
-                  </label>
-                  <input
-                    type="text"
-                    value="987-65-4321"
-                    readOnly
-                    className="w-full px-3 py-2 bg-cream/50 border border-forest/10 text-sm font-mono text-forest"
-                  />
-                  <div className="absolute right-3 top-8 w-5 h-5 bg-dark-gold rounded-full flex items-center justify-center shadow-md">
-                    <svg className="w-3 h-3 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M5 13l4 4L19 7" />
-                    </svg>
+                {/* Form Content */}
+                <div className="p-5 sm:p-6 space-y-5 relative">
+                  {/* Primary Taxpayer */}
+                  <div>
+                    <label className="text-[10px] font-semibold uppercase tracking-wider text-forest/50 mb-2.5 block">
+                      Primary Taxpayer
+                    </label>
+                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                      <div className="relative group">
+                        <input
+                          type="text"
+                          value="Young"
+                          readOnly
+                          className="w-full px-4 py-3 bg-gradient-to-r from-cream/60 to-cream/40 border border-forest/8 text-sm text-forest rounded-md transition-all duration-200 group-hover:border-dark-gold/30 group-hover:shadow-sm"
+                        />
+                        {/* AI Extraction Indicator */}
+                        <div className="absolute -right-1 -top-1 w-5 h-5 bg-gradient-to-br from-dark-gold to-dark-gold/80 rounded-full flex items-center justify-center shadow-lg shadow-dark-gold/30 ring-2 ring-white">
+                          <svg className="w-2.5 h-2.5 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M5 13l4 4L19 7" />
+                          </svg>
+                        </div>
+                      </div>
+                      <div className="relative group">
+                        <input
+                          type="text"
+                          value="Nicholas"
+                          readOnly
+                          className="w-full px-4 py-3 bg-gradient-to-r from-cream/60 to-cream/40 border border-forest/8 text-sm text-forest rounded-md transition-all duration-200 group-hover:border-dark-gold/30 group-hover:shadow-sm"
+                        />
+                        <div className="absolute -right-1 -top-1 w-5 h-5 bg-gradient-to-br from-dark-gold to-dark-gold/80 rounded-full flex items-center justify-center shadow-lg shadow-dark-gold/30 ring-2 ring-white">
+                          <svg className="w-2.5 h-2.5 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M5 13l4 4L19 7" />
+                          </svg>
+                        </div>
+                      </div>
+                    </div>
                   </div>
-                </div>
 
-                {/* Address */}
-                <div>
-                  <label className="text-[10px] font-bold uppercase tracking-wider text-forest/60 mb-2 block">
-                    Address
-                  </label>
-                  <input
-                    type="text"
-                    value="456 Oak St, San Francisco, CA 12345"
-                    readOnly
-                    className="w-full px-3 py-2 bg-cream/50 border border-forest/10 text-sm text-forest "
-                  />
-                </div>
+                  {/* SSN */}
+                  <div className="relative group">
+                    <label className="text-[10px] font-semibold uppercase tracking-wider text-forest/50 mb-2.5 block">
+                      Social Security Number
+                    </label>
+                    <div className="relative">
+                      <input
+                        type="text"
+                        value="987-65-4321"
+                        readOnly
+                        className="w-full px-4 py-3 bg-gradient-to-r from-cream/60 to-cream/40 border border-forest/8 text-sm font-mono text-forest rounded-md transition-all duration-200 group-hover:border-dark-gold/30 group-hover:shadow-sm"
+                      />
+                      <div className="absolute right-3 top-1/2 -translate-y-1/2 w-5 h-5 bg-gradient-to-br from-dark-gold to-dark-gold/80 rounded-full flex items-center justify-center shadow-lg shadow-dark-gold/30">
+                        <svg className="w-2.5 h-2.5 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M5 13l4 4L19 7" />
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
 
-                {/* AI Extraction Source Indicator */}
-                <div className="relative pt-3 border-t border-forest/10 bg-dark-gold/5 -mx-6 px-6 pb-4">
-                  <div className="absolute top-0 left-0 right-0 h-0.5 bg-gradient-to-r from-transparent via-dark-gold/40 to-transparent"></div>
+                  {/* Address */}
+                  <div className="group">
+                    <label className="text-[10px] font-semibold uppercase tracking-wider text-forest/50 mb-2.5 block">
+                      Address
+                    </label>
+                    <input
+                      type="text"
+                      value="456 Oak St, San Francisco, CA 12345"
+                      readOnly
+                      className="w-full px-4 py-3 bg-gradient-to-r from-cream/60 to-cream/40 border border-forest/8 text-sm text-forest rounded-md transition-all duration-200 group-hover:border-dark-gold/30 group-hover:shadow-sm"
+                    />
+                  </div>
 
-                  {/* Attachments */}
-                  <div className="pt-3">
-                    <div className="flex items-center justify-between mb-3">
-                      <p className="text-[10px] font-bold uppercase tracking-wider text-forest/60">Attachments</p>
-                      <span className="text-[8px] font-bold uppercase tracking-wider text-dark-gold flex items-center gap-1">
-                        <div className="w-1 h-1 bg-dark-gold rounded-full animate-pulse"></div>
+                  {/* Attachments Section */}
+                  <div className="relative pt-5 mt-2">
+                    <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-forest/10 to-transparent"></div>
+
+                    <div className="flex items-center justify-between mb-4">
+                      <p className="text-[10px] font-semibold uppercase tracking-wider text-forest/50">Attachments</p>
+                      <span className="text-[9px] font-semibold uppercase tracking-wider text-dark-gold flex items-center gap-1.5 bg-dark-gold/5 px-2.5 py-1 rounded">
+                        <div className="w-1.5 h-1.5 bg-dark-gold rounded-full animate-pulse"></div>
                         AI Scanning
                       </span>
                     </div>
-                    <div className="w-full h-16 bg-dark-gold/8 my-2 "></div>
-                    <div className="space-y-2">
-                      <div className="flex items-center gap-3 p-2.5 bg-white border-2 border-dark-gold/30 shadow-sm">
-                        <div className="w-8 h-8 bg-dark-gold/10 flex items-center justify-center">
-                          <svg className="w-4 h-4 text-dark-gold" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
-                          </svg>
-                        </div>
-                       
-                        <div className="flex-1 min-w-0">
-                          <p className="text-xs font-medium text-forest truncate">W-2_Nicholas_Young.pdf</p>
-                          <p className="text-[10px] text-forest/50">142 KB • Processed</p>
-                        </div>
-                        <span className="text-[9px] font-bold uppercase tracking-wider text-green-700 bg-green-100 px-2 py-1">
-                          Verified
-                        </span>
+
+                    {/* File attachment card */}
+                    <div className="flex items-center gap-4 p-4 bg-gradient-to-r from-cream/80 to-cream/50 rounded-md border border-forest/5 hover:border-dark-gold/20 transition-all duration-200 hover:shadow-md group/file">
+                      <div className="w-10 h-10 bg-gradient-to-br from-dark-gold/10 to-dark-gold/5 rounded-md flex items-center justify-center shrink-0 group-hover/file:from-dark-gold/15 group-hover/file:to-dark-gold/10 transition-all duration-200">
+                        <svg className="w-5 h-5 text-dark-gold" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                        </svg>
                       </div>
+
+                      <div className="flex-1 min-w-0">
+                        <p className="text-sm font-medium text-forest truncate">W-2_Nicholas_Young.pdf</p>
+                        <p className="text-[11px] text-forest/40">142 KB • Processed</p>
+                      </div>
+                      <span className="text-[10px] font-semibold uppercase tracking-wider text-emerald-700 bg-emerald-50 px-3 py-1.5 rounded border border-emerald-100 shrink-0">
+                        Verified
+                      </span>
                     </div>
                   </div>
                 </div>
-              </div>
 
-                {/* Decorative corners */}
-                <div className="absolute -top-1 -left-1 w-4 h-4 border-t-2 border-l-2 border-dark-gold"></div>
-                <div className="absolute -bottom-1 -right-1 w-4 h-4 border-b-2 border-r-2 border-dark-gold"></div>
+                {/* Decorative accent line at bottom */}
+                <div className="h-1 bg-gradient-to-r from-dark-gold via-dark-gold/60 to-transparent"></div>
               </div>
             </div>
           </FadeIn>
