@@ -115,13 +115,13 @@ export default function Blog() {
     <div className="min-h-screen bg-cream selection:bg-gold/30">
       
       {/* Featured Section */}
-      <section className="relative pt-16 pb-20 px-4 overflow-hidden">
+      <section className="relative pt-16 pb-20 overflow-hidden">
         {/* Background Guilloche Accent */}
          <div className="absolute top-0 right-0 w-[800px] h-[800px] opacity-30 pointer-events-none translate-x-1/3 -translate-y-1/4">
             <Guilloche type="wave" opacity={0.3} className="text-gold" />
          </div>
 
-        <div className="max-w-7xl mx-auto">
+        <div className="max-w-7xl mx-auto px-4">
             <div className="flex flex-col lg:flex-row gap-8 lg:gap-16 items-center">
                  {/* Featured Content */}
                 <div className="flex-1 space-y-8 relative z-10 pt-4">
@@ -184,8 +184,8 @@ export default function Blog() {
       </div>
 
       {/* Regular Feed */}
-      <section className="pt-20 pb-32 px-4">
-        <div className="max-w-7xl mx-auto">
+      <section className="pt-20 pb-32">
+        <div className="max-w-7xl mx-auto px-4">
            
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-16">
                 {regularPosts.map((post) => (
