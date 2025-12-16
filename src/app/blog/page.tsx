@@ -5,6 +5,7 @@ import Guilloche from "@/components/Guilloche";
 
 interface BlogPost {
   id: string;
+  slug: string;
   title: string;
   description: string;
   author: {
@@ -21,6 +22,7 @@ interface BlogPost {
 const MOCK_POSTS: BlogPost[] = [
   {
     id: "1",
+    slug: "ai-driven-ma-due-diligence",
     title: "AI-Driven M&A: The New Due Diligence Standard",
     description: "How artificial intelligence is revolutionizing the merger and acquisition landscape, from automated risk assessment to predictive valuation models. We explore the strategic advantages of early adoption in high-stakes deal flows.",
     author: {
@@ -35,6 +37,7 @@ const MOCK_POSTS: BlogPost[] = [
   },
   {
     id: "2",
+    slug: "optimizing-corporate-tax-workflows",
     title: "Optimizing Corporate Tax Workflows",
     description: "Streamlining complex multi-jurisdictional tax reporting using modern dev workflows and automated compliance engines.",
     author: {
@@ -48,6 +51,7 @@ const MOCK_POSTS: BlogPost[] = [
   },
   {
     id: "3",
+    slug: "design-system-of-finance",
     title: "The Design System of Finance",
     description: "Bringing clarity to complex financial data through atomic design principles and user-centric dashboard interfaces.",
     author: {
@@ -61,6 +65,7 @@ const MOCK_POSTS: BlogPost[] = [
   },
   {
     id: "4",
+    slug: "scaling-professional-services-tech",
     title: "Scaling Professional Services with Tech",
     description: "How boutique firms are leveraging custom dev tools to compete with global consulting giants.",
     author: {
@@ -74,6 +79,7 @@ const MOCK_POSTS: BlogPost[] = [
   },
   {
     id: "5",
+    slug: "machine-learning-fraud-detection",
     title: "Machine Learning in Fraud Detection",
     description: "Implementing real-time anomaly detection pipelines for high-volume transaction processing systems.",
     author: {
@@ -87,6 +93,7 @@ const MOCK_POSTS: BlogPost[] = [
   },
   {
     id: "6",
+    slug: "navigating-regulatory-moats",
     title: "Navigating Regulatory Moats",
     description: "Using technology to turn complex regulatory frameworks into a competitive advantage for new market entrants.",
     author: {
@@ -126,7 +133,7 @@ export default function Blog() {
                     </div>
                     
                     <h1 className="text-4xl md:text-5xl lg:text-6xl font-serif font-medium text-forest leading-[1] tracking-tight text-balance">
-                        <Link href="#" className="hover:text-dark-gold transition-colors duration-300">
+                        <Link href={`/blog/${featuredPost.slug}`} className="hover:text-dark-gold transition-colors duration-300">
                             {featuredPost.title}
                         </Link>
                     </h1>
@@ -152,7 +159,7 @@ export default function Blog() {
 
                 {/* Featured Image */}
                 <div className="flex-1 w-full relative group cursor-pointer">
-                    <Link href="#">
+                    <Link href={`/blog/${featuredPost.slug}`}>
                         <div className="relative aspect-[4/3] w-full overflow-hidden rounded-sm">
                             <img 
                                 src={featuredPost.thumbnail} 
@@ -182,7 +189,7 @@ export default function Blog() {
            
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-16">
                 {regularPosts.map((post) => (
-                <Link key={post.id} href={`#`} className="group flex flex-col h-full bg-transparent">
+                <Link key={post.id} href={`/blog/${post.slug}`} className="group flex flex-col h-full bg-transparent">
                     {/* Image */}
                     <div className="aspect-[3/2] overflow-hidden rounded-sm mb-6 relative">
                         <img
