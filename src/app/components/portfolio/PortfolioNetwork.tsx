@@ -34,7 +34,7 @@ export default function PortfolioNetwork() {
   return (
     <Section id="network" className="bg-cream">
       <div className="text-center mb-20">
-        <span className="text-forest/50 text-xs font-bold uppercase tracking-[0.2em] mb-4 block">
+        <span className="kicker text-forest/50">
           Global Reach
         </span>
         <h2 className="font-serif text-5xl md:text-6xl tracking-tight text-forest leading-[1.1]">

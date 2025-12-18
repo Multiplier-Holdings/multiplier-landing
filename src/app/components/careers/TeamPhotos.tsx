@@ -18,7 +18,7 @@ export default function TeamPhotos() {
   return (
     <Section className="bg-forest/20 py-20">
       <div className="text-center mb-12">
-        <span className="text-forest/50 text-xs font-bold uppercase tracking-[0.2em] mb-4 block">
+        <span className="kicker text-forest/50">
           Life at Multiplier
         </span>
         <h2 className="font-serif text-5xl md:text-6xl tracking-tighter text-forest mb-4 leading-[1.1]">

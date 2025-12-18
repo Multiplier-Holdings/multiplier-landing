@@ -22,7 +22,7 @@ export default function TangibleVelocity() {
   return (
     <Section className="bg-forest border-y border-gold/20">
       <FadeIn>
-        <span className="text-cream/60 text-xs font-bold uppercase tracking-[0.2em] mb-4 block text-center">
+        <span className="kicker text-cream/60 text-center">
           Velocity
         </span>
         <h2 className="text-center font-serif text-5xl md:text-6xl tracking-tight text-cream mb-16">Tangible Results</h2>

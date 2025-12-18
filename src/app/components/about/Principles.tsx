@@ -32,7 +32,7 @@ export default function Principles() {
       <FadeIn>
         <div className="flex flex-col lg:flex-row lg:gap-24">
           <div className="lg:w-1/3 lg:sticky lg:top-32 h-fit mb-12 lg:mb-0">
-            <span className="text-cream/60 text-xs font-bold uppercase tracking-[0.2em] mb-4 block">
+            <span className="kicker text-cream/60">
               Principles
             </span>
             <h2 className="font-serif text-5xl md:text-6xl tracking-tight text-cream mb-6">

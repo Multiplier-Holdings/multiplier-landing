@@ -60,7 +60,7 @@ export default function EmployeeVoices() {
   return (
     <Section className="bg-white">
       <div className="text-center mb-16">
-        <span className="text-forest/60 text-xs font-bold uppercase tracking-[0.2em] mb-4 block">
+        <span className="kicker text-forest/60">
           Voices
         </span>
         <h2 className="font-serif text-5xl md:text-6xl tracking-tighter text-forest">

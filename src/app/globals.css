@@ -149,3 +149,9 @@
     @apply bg-background text-foreground;
   }
 }
+
+@layer components {
+  .kicker {
+    @apply text-xs font-bold uppercase tracking-[0.2em] mb-4 block;
+  }
+}
